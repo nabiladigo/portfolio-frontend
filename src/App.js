@@ -3,10 +3,10 @@ import {Route, Routes} from 'react-router-dom';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/contact";
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 
 const App = () =>{
