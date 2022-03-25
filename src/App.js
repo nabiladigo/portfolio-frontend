@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 const App = () =>{
-  const URL='https://digo-portfolio.herokuapp.com/';
+  const URL='localhost:4000/';
 
   return (
     <div>
