@@ -13,7 +13,10 @@ function Nav(props) {
 
   return (
     <header>
-      <nav style={navStyle}>
+      <nav 
+      // style={navStyle}
+      >
+        <img alt="logo" src="https://i.imgur.com/cLYvXem.jpg" sizes="width:100px "/>
         <Link to="/">
           <div>Nabila<span>Digourdi</span></div>
         </Link>
@@ -26,9 +29,8 @@ function Nav(props) {
         <Link to="/contact">
           <div>Contact</div>
         </Link>
-        <Link to="/resume">
-          <div>Resume</div>
-        </Link>
+        <a href='https://docs.google.com/document/d/1UqOyAENDdGjgEj7gWPphDqqN91m81c1ZTzC2hKQfc3k/'> Resume
+         </a>
       </nav>
     </header>
   );

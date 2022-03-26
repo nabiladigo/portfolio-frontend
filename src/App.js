@@ -7,10 +7,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume';
+// import Resume from './pages/Resume';
 
 const App = () =>{
-  const URL='localhost:4000/';
+  // const URL='http://localhost:4000/';
+  const URL = 'https://digo-portfolio.herokuapp.com/'
 
   return (
     <div>
@@ -20,7 +21,7 @@ const App = () =>{
             <Route path='/projects' element = {<Projects  URL={URL} />} />
             <Route path='/about' element = {<About  URL={URL} /> } />
             <Route path='/contact' element= {<Contact URL={URL} />} />   
-            <Route path='/resume' element= {<Resume URL={URL} />} />   
+            {/* <Route path='/resume' element= {<Resume URL={URL} />} />    */}
         </Routes>
          <Footer />
     </div>

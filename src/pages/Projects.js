@@ -4,16 +4,16 @@ import { useState, useEffect  } from 'react';
 const Projects = (props) => {
   const [projects, setProjects] = useState(null);
   const getProjectsData = async() =>{
-    const response = await fetch(props.URL + "peojects");
+    const response = await fetch(props.URL + "projects");
     console.log(response);
     const data = await response.json();
     console.log(data);
     setProjects(data);
   };
-  useEffect(()=> getProjectsData)
+  useEffect(() => getProjectsData(), []);
   const loaded =() =>{
-    return projects.map((project)=>(
-    <div>
+    return projects.map((project, index)=>(
+    <div  key={index}>
         <img src={project.image} alt={project.name}/>
         <h1>{project.name}</h1>
         <a href={project.git}>
