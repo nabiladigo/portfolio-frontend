@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.scss';
 import {Route, Routes} from 'react-router-dom';
 
 import Nav from './components/Nav';
@@ -14,7 +14,7 @@ const App = () =>{
   const URL = 'https://digo-portfolio.herokuapp.com/'
 
   return (
-    <div>
+    <div className='app'>
         <Nav />
         <Routes>
              <Route exact path='/' element ={<Home  URL={URL} />} />
