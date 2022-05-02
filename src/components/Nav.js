@@ -1,42 +1,36 @@
 import { Link } from "react-router-dom";
 import '../styles/Nav.scss';
-
+//  need to work on nav bar more dropdown and why did I use a instead of Link
 function Nav(props) {
-//   //inline style for the nav tag
-//   const navStyle = {
-//     display: "flex",
-//     justifyContent: "space-around",
-//     border: "3px solid black",
-//     padding: "8px",
-//     width: "90%",
-//     margin: "auto",
-//   };
-
-  return (
-    <header>
-      <nav className="navbar" >
-
-        <img className="image" alt="logo" src="https://i.imgur.com/cLYvXem.jpg"/>
-        <div  className="link">
-        <Link  to="/">
-          Nabila<span>Digourdi</span>
-        </Link>
-        <Link  to="/about">
-          ABOUT
-        </Link>
-        <Link  to="/projects">
-          My Work
-        </Link>
-        <Link  to="/contact">
-          Contact
-        </Link>
-        <a  href='https://docs.google.com/document/d/1UqOyAENDdGjgEj7gWPphDqqN91m81c1ZTzC2hKQfc3k/'> 
-          Resume
-         </a>
-         </div>
-      </nav>
-    </header>
-  );
+    return (
+        <header className="header">
+            <div className="logo">
+                <img className="image" alt="logo" src="https://i.imgur.com/cLYvXem.jpg"/>
+                <a href="/">Nabila<span>Digourdi</span></a>
+            </div>
+            <nav className="navbar" >
+                <ul className="link">
+                    <li>
+                        <a className="list" href="/about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a className="list" href="/projects">My Work</a>
+                    </li>               
+                    <li>
+                        <a className="list" href="/contact">Contact</a>
+                    </li>               
+                    <li>
+                        <a className="list" href='https://docs.google.com/document/d/1_GA1E4VOXxVk1QKdjY5BP3_uWV0lvLBOCfoTxEh146I'>Resume</a>
+                    </li> 
+                </ul>
+            </nav>
+            <div className="nav_toggle"></div>
+        </header>
+   );
 }
+                 
+  
+ 
+ 
 
 export default Nav;

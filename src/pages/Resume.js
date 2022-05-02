@@ -3,7 +3,7 @@ import React from 'react'
 const Resume = () => {
   return (
     <div>
-      <a href='https://docs.google.com/document/d/1UqOyAENDdGjgEj7gWPphDqqN91m81c1ZTzC2hKQfc3k/'> Resume</a>
+      <a href='https://docs.google.com/document/d/1_GA1E4VOXxVk1QKdjY5BP3_uWV0lvLBOCfoTxEh146I/'> Resume</a>
     </div>
   )
 }
