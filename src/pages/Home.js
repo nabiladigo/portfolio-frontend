@@ -10,7 +10,7 @@
 
 //   return (
 //     <div>
-//       {/* need to add github linkedin codepen leecode */}
+//       {/* need to add github linkedin codepen leecode (put then in the side bar) */}
 //       <About />
 
 //     </div>
