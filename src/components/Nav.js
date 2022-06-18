@@ -10,18 +10,22 @@ function Nav(props) {
             </div>
             <nav className="navbar" >
                 <ul className="link">
-                    <li>
-                        <a className="list" href="/about">ABOUT</a>
+                    <li> <a className="list" href="/home">HOME</a>
+                        <ul>
+                            <li>
+                                <a className="list" href="/about">ABOUT</a>
+                            </li>
+                            <li>
+                                <a className="list" href="/projects">My Work</a>
+                            </li>               
+                            <li>
+                                <a className="list" href="/contact">Contact</a>
+                            </li>               
+                            <li>
+                                <a className="list" href='https://docs.google.com/document/d/1_GA1E4VOXxVk1QKdjY5BP3_uWV0lvLBOCfoTxEh146I'>Resume</a>
+                            </li> 
+                            </ul>
                     </li>
-                    <li>
-                        <a className="list" href="/projects">My Work</a>
-                    </li>               
-                    <li>
-                        <a className="list" href="/contact">Contact</a>
-                    </li>               
-                    <li>
-                        <a className="list" href='https://docs.google.com/document/d/1_GA1E4VOXxVk1QKdjY5BP3_uWV0lvLBOCfoTxEh146I'>Resume</a>
-                    </li> 
                 </ul>
             </nav>
             <div className="nav_toggle"></div>
