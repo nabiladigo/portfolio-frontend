@@ -24,35 +24,51 @@
     height: 40px;
 }
 
-$nav-color: #000000;
-$nav-drop-color: #000000;
-$line-height: 2em;
+$nav-color: 
+// #020b44
+ #008CBA
+;
+
+$nav-drop-color: #09dff3;
+$line-height: 
+50px;
+// 2em;
 $nav-padding: .75em;
-$a-hover: #ffffff;
+$a-hover: #000106;
 
 /* Reset */
 body {
     @include reset;
-    line-height: $line-height;
+    // line-height: $line-height;
     font-family: Helvetica;
-    background-color: #333;
+    background-color: rgb(159, 133, 243);
 }
 
 /* Dropdown */
+// I did change style I used reverse engineering project
 nav {
     background: $nav-color;
     @include subtle-gradient(lighten($nav-color, 3%), $nav-color);
     height: $line-height;
+    // outline:2px solid #013546;
     border-top: 1px solid lighten($nav-color, 15%);
     border-bottom: 1px solid darken($nav-color, 20%);
-    @include shadow(2px, 2px, 0px, rgba(0, 0, 0, .25));
+    @include shadow(2px, 2px, 0px,#013546);
 
+    ul{
+        font-size: 1em;
+        float: right;
+        // border-right: 1px solid darken($nav-color, 5%);
+    }
+    // .link{
+    // }
     a {
         color: #6bd5d5;
         padding-left: $nav-padding;
         padding-right: $nav-padding;
-        display: block;
-        border-right: 1px solid darken($nav-color, 5%);
+        display: inline-flex;
+        // make the border on the links only 
+        // border-right: 1px solid darken($nav-color, 5%);
         text-decoration: none;
 
         &:hover {
@@ -60,36 +76,36 @@ nav {
         }
     }
 
-    ul {
-        @include reset;
-        list-style: none;
+    // ul {
+    //     @include reset;
+    //     list-style: none;
 
-        li {
-            float: left;
-            position: relative;
+    //     li {
+    //         float: left;
+    //         position: relative;
 
-            ul {
-                display: none;
-                position: absolute;
-                overflow: auto;
-                width: 17em;
-                /* fix this */
-                background-color: $nav-drop-color;
-                border-bottom: 1px solid darken($nav-drop-color, 20%);
-                border-left: 1px solid darken($nav-drop-color, 20%);
-                border-right: 1px solid darken($nav-drop-color, 20%);
-                @include shadow(2px, 2px, 0px, rgba(0, 0, 0, .25));
-                @include subtle-gradient(lighten($nav-drop-color, 3%), $nav-drop-color);
+    //         ul {
+    //             display: none;
+    //             position: absolute;
+    //             overflow: auto;
+    //             width: 17em;
+    //             /* fix this */
+    //             background-color: $nav-drop-color;
+    //             border-bottom: 1px solid darken($nav-drop-color, 20%);
+    //             border-left: 1px solid darken($nav-drop-color, 20%);
+    //             border-right: 1px solid darken($nav-drop-color, 20%);
+    //             @include shadow(2px, 2px, 0px, rgba(0, 0, 0, .25));
+    //             @include subtle-gradient(lighten($nav-drop-color, 3%), $nav-drop-color);
 
-                li {
-                    float: none;
-                    border-bottom: 1px solid darken($nav-drop-color, 2%);
-                }
-            }
+    //             li {
+    //                 float: none;
+    //                 border-bottom: 1px solid darken($nav-drop-color, 2%);
+    //             }
+    //         }
 
-            &:hover ul {
-                display: block;
-            }
-        }
-    }
+    //         &:hover ul {
+    //             display: block;
+    //         }
+    //     }
+    // }
 }

@@ -22,11 +22,11 @@ function About(props) {
   const loaded = () => (
     <div>
       <h1>About Me:</h1>
+      <img src={about.headshot} alt= {about.name} />
       <div>
         {about.bio}
-         <div>Here are few technologies I've been working with: {about.skills}</div>
+         <div>Here are few technologies I've been working with: {about.skills}...</div>
       </div>
-      <img src={about.headshot} alt= {about.name} />
     </div>
   );
 

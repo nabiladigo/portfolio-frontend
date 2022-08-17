@@ -15,7 +15,7 @@ function Home(props) {
   useEffect(() => getHomeData(), []);
   const loaded =() =>(
     <div>
-      <img src={home.headshot} alt={home.name}/>
+      <img className="tof" src={home.headshot} alt={home.name}/>
       <h2>Hello I'm </h2>
       <h1>{home.name}</h1>
       <h1>I build things</h1>

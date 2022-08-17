@@ -1,4 +1,4 @@
-import './styles/App.scss';
+// import './styles/App.scss';
 import {Route, Routes} from 'react-router-dom';
 
 import Nav from './components/Nav';
@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-// import Resume from './pages/Resume';
+
 
 const App = () =>{
   const URL='http://localhost:5000/';
