@@ -2,7 +2,7 @@
 import {Route, Routes} from 'react-router-dom';
 
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -23,7 +23,7 @@ const App = () =>{
             <Route path='/contact' element= {<Contact URL={URL} />} />   
             {/* <Route path='/resume' element= {<Resume URL={URL} />} />    */}
         </Routes>
-         <Footer />
+         {/* <Footer /> */}
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState} from "react";
-
+import '../styles/Home.scss';
 function Home(props) {
  
   const [home, setHome] = useState();
@@ -15,11 +15,12 @@ function Home(props) {
   useEffect(() => getHomeData(), []);
   const loaded =() =>(
     <div>
-      <img className="tof" src={home.headshot} alt={home.name}/>
       <h2>Hello I'm </h2>
       <h1>{home.name}</h1>
-      <h1>I build things</h1>
-      <p>{home.bio}</p>
+      <img className="tof" src={home.headshot} alt={home.name}/>
+      <h5>FULLSTACK DEVELOPER | SOFTWARE ENGINEER</h5>
+      {/* <p>{home.bio}</p> */}
+      <a href="contact" className= "btn btn-primary"> Say Hello 👋</a>
     </div>
   );
     return home ? loaded() : <h1>loading...</h1>;

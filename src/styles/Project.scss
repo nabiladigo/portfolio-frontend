@@ -1,0 +1,54 @@
+// $
+
+/* fr (fractals) go center and make sure its even space 50% each side */
+/* rem is root elemt 1rm is 16 px 2rem is 32 so on */
+ 
+
+.project_container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 2.5rem;
+ }
+
+ .project_item{
+    background: var(--color-bg-varaint);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+ }
+ 
+ .project_item-image{
+    border-radius:1.5 rem;
+    overflow: hidden;
+    // height: 4rem;
+    // width: 4rem;
+ }
+ .project_item:hover{
+    border-color:var(--color-primary-variant);
+    background: transparent;
+ }
+ .project_item h1{
+    margin:1.2rem 0 2rem;
+ }
+
+ .project_item-cta{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+ }
+//  at media queries (medium devicestablet)
+// @media screen and (max-width: 1024px) {
+//     .project_container {
+//         grid-template-columns: 1fr 1fr;
+//         gap: 1.2rem;
+//     }
+// }
+
+/* ========Media Queries (Small Devices Tablets) =========*/
+@media screen and (max-width:500px){
+    .project_container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
