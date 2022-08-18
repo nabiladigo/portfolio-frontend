@@ -1,6 +1,24 @@
-$email:#e307b3;
-$text:white;
 
+// how to import variables 
+$email: #e307b3;
+$text: white;
+$box: green;
+
+.contact{
+    left:50%;
+    text-align: center;
+    // margin-left: -50vw;
+    // width: 100%;
+    // min-width: 100%;
+    box-sizing: border-box;
+    position: inherit;
+    color: var(--bg-text-color);
+    flex-shrink: 0;
+
+}
+.box{
+    border-color: $box;
+}
 
 .w-1\/2{
     width:50%

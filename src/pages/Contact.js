@@ -3,7 +3,7 @@ import '../styles/Contact.scss';
 
 const Contact = (props) => {
     return(
-      <div>
+      <div className="contact">
         <h3 className="text-5xl font-bold pd-4">
             Get in Touch
           </h3>
